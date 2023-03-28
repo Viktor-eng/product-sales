@@ -1,0 +1,57 @@
+.page {
+  width: 1552px;
+  height: 288px;
+  margin-bottom: 32px;
+  margin-top: 32px;
+
+  .contact {
+    padding: 32px;
+    box-sizing: border-box;
+    width: 760px;
+    height: 288px;
+    background: #F4F4F4;
+    border: 2px solid #F4F4F4;
+    border-radius: 24px;
+
+    .header {
+      color: #232323;
+      font-weight: 500;
+      font-size: 40px;
+      line-height: 100%;
+      margin-bottom: 40px;
+
+      .childHeader {
+        color: #232323;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24px;
+      }
+    }
+  }
+
+  .map {
+    margin-left: 32px;
+  }
+}
+
+.marginRight210px {
+  margin-right: 210px;
+}
+
+.marginRight205px {
+  margin-right: 205px;
+}
+
+.weight500 {
+  font-weight: 500;
+}
+
+.marginButton12px {
+  margin-bottom: 12px;
+}
+
+.marginTop24px {
+  margin-top: 24px;
+}
+
+

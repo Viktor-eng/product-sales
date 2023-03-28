@@ -1,0 +1,53 @@
+.wrapper {
+  width: 431px;
+  height: 424px;
+  border: 2px solid #E1E8EE;
+  border-radius: 8px;
+  box-sizing: border-box;
+  padding: 16px;
+  background: #FFFFFF;
+
+  &:hover {
+    border: 2px solid #00307C;
+  }
+
+  .wrapperImg {
+    width: 399px;
+    height: 296px;
+    border: 1px solid #E1E8EE;
+    border-radius: 8px;
+  }
+
+  .header {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.15px;
+    color: #0058A4;
+    box-sizing: border-box;
+  }
+
+  .name {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    color: #232323;
+    box-sizing: border-box;
+    margin-top: 12px;
+  }
+
+  .price {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .content {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #232323;
+  }
+}

@@ -1,0 +1,84 @@
+.wrapper {
+  box-sizing: border-box;
+  padding: 24px 32px;
+  color: #FFFFFF;
+  width: 1552px;
+  height: 168px;
+  border-radius: 24px;
+  border: 2px solid #0058A4;
+  background: #0058A4;
+
+  .header {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 100%;
+    margin: 0 0 20px;
+  }
+
+  .headerChild {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0.15px;
+    box-sizing: border-box;
+    margin-right: 80px;
+
+    span {
+      cursor: pointer;
+      color: #FFFFFF;
+      text-decoration: none;
+    }
+
+    .headerChildNotWeight {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 16px;
+      color: #FFFFFF;
+      margin-top: 12px;
+    }
+
+    .headerChildNotWeight a {
+      text-decoration: none;
+    }
+
+    .headerChildNotWeight:first-child {
+      margin-top: 24px;
+    }
+  }
+
+  .headerChild:last-child {
+    margin-right: 0;
+  }
+
+  .buttonApplication {
+    width: 336px;
+    height: 40px;
+    background: #0058A4;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    border-radius: 24px;
+    border: 2px solid #FFFFFF;
+    cursor: pointer;
+  }
+}
+
+.privacyPolicy {
+  margin-top: 16px;
+  box-sizing: border-box;
+  width: 1552px;
+  height: 72px;
+  padding: 24px 32px;
+  gap: 56px;
+  background: #F4F4F4;
+  border-radius: 24px;
+  border: 2px solid #F4F4F4;
+
+  .content {
+    color: #BEBFC7;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}

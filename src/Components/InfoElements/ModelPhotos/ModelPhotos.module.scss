@@ -1,0 +1,27 @@
+.wrapper {
+  width: 496px;
+  height: 531px;
+  background: #FFFFFF;
+  border: 1px solid #E1E8EE;
+  border-radius: 16px;
+  padding: 24px 48px;
+  box-sizing: border-box;
+  position: relative;
+
+  .leftArrow{
+    position: absolute;
+    top: 253.5px;
+    left: 16px;
+    cursor: pointer;
+  }
+
+  .rightArrow{
+    position: absolute;
+    top: 253.5px;
+    right: 16px;
+    cursor: pointer;
+  }
+}
+
+
+

@@ -1,0 +1,60 @@
+.wrapper {
+  width: 960px;
+  height: 208px;
+  background: #FFFFFF;
+  border: 1px solid #E7EAEE;
+  border-radius: 16px;
+  padding: 24px 16px;
+  box-sizing: border-box;
+
+
+  .wrapperCheckboxAndModel {
+    width: 188px;
+    height: 160px;
+    border: 1px solid black;
+    box-sizing: border-box;
+  }
+
+  .wrapperContentDrawer {
+    width: 724px;
+    height: 160px;
+    margin-left: 16px;
+    box-sizing: border-box;
+
+  }
+
+  .headerCard {
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    color: #232323;
+  }
+
+  .priceCardContent {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #232323;
+
+    .content {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 16px;
+      color: #232323;
+    }
+  }
+}
+
+.marginRight8px {
+  margin-right: 8px;
+}
+
+.gap12px {
+  gap: 12px;
+}
+
+.marginTop12px {
+  margin-top: 12px;
+}
