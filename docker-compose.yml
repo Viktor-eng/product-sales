@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  web:
+    image: product/sale
+    build:
+      context: .
+    ports:
+      - "5200:5000"
