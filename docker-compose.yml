@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   web:
-    image: product/sale
+    image: product-sale
     build:
       context: .
     ports:
