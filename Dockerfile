@@ -15,7 +15,7 @@ RUN npm i -g serve
 
 WORKDIR /home/app
 
-COPY  --from=node-build /app/build/ .
+COPY --from=node-build /app/build/ ./build
 
 CMD ["serve", "-s", "build", "-l", "5000"]
 
