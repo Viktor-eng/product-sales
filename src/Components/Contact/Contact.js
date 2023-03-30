@@ -14,7 +14,7 @@ function Contact() {
                         </div>
                         <div className={`d-flex ${styles.weight500}`}>
                             <div className={styles.marginRight210px}>+7 (3822) 49-89-89</div>
-                            <div className="cu-p">calble@tomskcable.ru</div>
+                            <div className="cu-p">cable@tomskcable.ru</div>
                         </div>
                         <div className={`${styles.marginTop24px} ${styles.marginButton12px}`}>Головной офис</div>
                         <div className={styles.weight500}>г. Томск, ул. Смирнова 3</div>

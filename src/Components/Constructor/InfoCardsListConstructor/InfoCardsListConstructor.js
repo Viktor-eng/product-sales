@@ -10,7 +10,7 @@ function InfoCardsListConstructor({elemClick}) {
             price: 10000,
             content: 'Крутая ванна',
             imgUrl: '/img/InfoCardsList/bathModels/model1/1.jpg',
-            idCardTitle: 1,
+            idCardTitle: 5,
             idItem: 1
         },
         {
@@ -31,27 +31,11 @@ function InfoCardsListConstructor({elemClick}) {
             idItem: 2
         },
         {
-            name: 'Лентообмотка, модель 1',
-            price: 10000,
-            content: 'Крутая лентообмотка',
-            imgUrl: '/img/InfoCardsList/tapeWindingsModels/model1/1.jpg',
-            idCardTitle: 3,
-            idItem: 1
-        },
-        {
-            name: 'Лентообмотка, модель 2',
-            price: 10000,
-            content: 'Крутая лентообмотка',
-            imgUrl: '/img/InfoCardsList/tapeWindingsModels/model2/1.jpg',
-            idCardTitle: 3,
-            idItem: 2
-        },
-        {
             name: 'Отдатчик, модель 1',
             price: 10000,
             content: 'Крутой отдатчик',
             imgUrl: '/img/InfoCardsList/recoilModels/model1/1.jpg',
-            idCardTitle: 4,
+            idCardTitle: 1,
             idItem: 1
         },
         {
@@ -59,7 +43,7 @@ function InfoCardsListConstructor({elemClick}) {
             price: 10000,
             content: 'Крутой отдатчик',
             imgUrl: '/img/InfoCardsList/recoilModels/model2/1.jpg',
-            idCardTitle: 4,
+            idCardTitle: 1,
             idItem: 2
         },
         {
@@ -67,19 +51,43 @@ function InfoCardsListConstructor({elemClick}) {
             price: 10000,
             content: 'Крутой отдатчик',
             imgUrl: '/img/InfoCardsList/recoilModels/model3/1.jpg',
-            idCardTitle: 4,
+            idCardTitle: 1,
             idItem: 3
         },
         {
-            name: 'Портал, модель 1',
+            name: 'Приемник, модель 1',
             price: 10000,
-            content: 'Крутой портал',
-            imgUrl: '/img/InfoCardsList/portalModels/model1/1.jpg',
-            idCardTitle: 5,
+            content: 'Крутой Приемник',
+            imgUrl: '/img/InfoCardsList/recoilModels/model1/1.jpg',
+            idCardTitle: 7,
             idItem: 1
         },
         {
-            name: 'Тяги, модель 1',
+            name: 'Приемник, модель 2',
+            price: 10000,
+            content: 'Крутой отдатчик',
+            imgUrl: '/img/InfoCardsList/recoilModels/model2/1.jpg',
+            idCardTitle: 7,
+            idItem: 2
+        },
+        {
+            name: 'Приемник, модель 3',
+            price: 10000,
+            content: 'Крутой отдатчик',
+            imgUrl: '/img/InfoCardsList/recoilModels/model3/1.jpg',
+            idCardTitle: 7,
+            idItem: 3
+        },
+        {
+            name: 'Тяга, модель 1',
+            price: 10000,
+            content: 'Крутая тяга',
+            imgUrl: '/img/InfoCardsList/thrustModels/model1/1.jpg',
+            idCardTitle: 3,
+            idItem: 1
+        },
+        {
+            name: 'Тяга, модель 1',
             price: 10000,
             content: 'Крутая тяга',
             imgUrl: '/img/InfoCardsList/thrustModels/model1/1.jpg',
@@ -87,11 +95,11 @@ function InfoCardsListConstructor({elemClick}) {
             idItem: 1
         },
         {
-            name: 'Экструзионные головки',
+            name: 'Экструзионная головка',
             price: 10000,
             content: 'Модель экструзионных головок',
             imgUrl: '/img/InfoCardsList/extrusionHeadsModels/model1/1.jpg',
-            idCardTitle: 7,
+            idCardTitle: 4,
             idItem: 1
         },
     ];
@@ -100,7 +108,7 @@ function InfoCardsListConstructor({elemClick}) {
         <div className={` d-flex ${styles.wrapper}`}>
             <div>
                 <div className={styles.wrapperListCardDrawer}>
-                    <div className={styles.header}>Разновидности элемента Name</div>
+                    <div className={styles.header}>Разновидности элемента 'Наименование элемента'</div>
                     <div className={`d-flex flex-column flex-wrap ${styles.gap12px}`}>
                         {arrayHeaderModels.filter((obj) => obj.idCardTitle == elemClick).map((obj) => (
                             <InfoCardConstructor

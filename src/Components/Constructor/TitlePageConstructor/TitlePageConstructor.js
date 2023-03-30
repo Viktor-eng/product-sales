@@ -24,7 +24,7 @@ function TitlePageConstructor() {
             id: 3
         },
         {
-            name: 'Экструзионные головки',
+            name: 'Экструзионная головка',
             imgUrl: '/img/CardTitle/extrusionHeads.jpg',
             id: 4
         },
