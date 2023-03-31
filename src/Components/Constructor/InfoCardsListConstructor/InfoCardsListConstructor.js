@@ -23,7 +23,6 @@ function InfoCardsListConstructor(props) {
             imgUrl: '/img/InfoCardsList/compensatorModels/model1/1.jpg',
             idCardTitle: 2,
             idItem: 1
-
         },
         {
             name: 'Компенсатор, модель 2',
