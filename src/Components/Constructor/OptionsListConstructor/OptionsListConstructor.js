@@ -1,6 +1,7 @@
 import styles from './OptionsListConstructor.module.scss'
 import OptionsConstructor from "../OptionsConstructor/OptionsConstructor";
 import DescriptionInfoCardConstructor from "../DescriptionInfoCardConstructor/DescriptionInfoCardConstructor";
+import {useState} from "react";
 
 
 function OptionsListConstructor(props) {
@@ -69,14 +70,11 @@ function OptionsListConstructor(props) {
                     ))}
                 </div>
                 <div className={`cu-p ${styles.buttonAddInDrawer}`}>
-                    <img width={311} height={48} src="/img/OptionsListConstructor/btn-addInDrawer.svg"
+                    <img onClick={() => props.changeCardStatusById} width={311} height={48} src="/img/OptionsListConstructor/btn-addInDrawer.svg"
                          alt="Добавить в корзину"/>
                 </div>
             </div>
-
         </div>
-
-
     );
 }
 
