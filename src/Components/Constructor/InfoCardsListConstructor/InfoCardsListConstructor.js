@@ -2,7 +2,9 @@ import styles from './InfoCardsListConstructor.module.scss'
 import InfoCardConstructor from "../InfoCardConstructor/InfoCardConstructor";
 import OptionsListConstructor from "../OptionsListConstructor/OptionsListConstructor";
 
-function InfoCardsListConstructor({elemClick}) {
+
+function InfoCardsListConstructor(props) {
+
 
     const arrayHeaderModels = [
         {
@@ -110,8 +112,9 @@ function InfoCardsListConstructor({elemClick}) {
                 <div className={styles.wrapperListCardDrawer}>
                     <div className={styles.header}>Разновидности элемента 'Наименование элемента'</div>
                     <div className={`d-flex flex-column flex-wrap ${styles.gap12px}`}>
-                        {arrayHeaderModels.filter((obj) => obj.idCardTitle == elemClick).map((obj) => (
+                        {arrayHeaderModels.filter((obj) => obj.idCardTitle == props.elemClick).map((obj) => (
                             <InfoCardConstructor
+                                key = {obj.id}
                                 name={obj.name}
                                 price={obj.price}
                                 content={obj.content}
@@ -121,7 +124,9 @@ function InfoCardsListConstructor({elemClick}) {
                 </div>
             </div>
             <div>
-                <OptionsListConstructor/>
+                <OptionsListConstructor idCardTitle = {props.elemClick}
+                                        changeCardStatusById = {props.changeCardColor}
+                />
             </div>
         </div>
     );
