@@ -1,11 +1,12 @@
 import styles from './InfoCardsListConstructor.module.scss'
 import InfoCardConstructor from "../InfoCardConstructor/InfoCardConstructor";
 import OptionsListConstructor from "../OptionsListConstructor/OptionsListConstructor";
+import {useState} from "react";
 
 
 function InfoCardsListConstructor(props) {
 
-
+    const [idCardInfo, setIdCardInfo] = useState(0)
     const arrayHeaderModels = [
         {
             name: 'Ванна, модель 1',
@@ -81,6 +82,30 @@ function InfoCardsListConstructor(props) {
             idItem: 3
         },
         {
+            name: 'Приемник, модель 1',
+            price: 10000,
+            content: 'Крутой Приемник',
+            imgUrl: '/img/InfoCardsList/recoilModels/model1/1.jpg',
+            idCardTitle: 8,
+            idItem: 1
+        },
+        {
+            name: 'Приемник, модель 2',
+            price: 10000,
+            content: 'Крутой отдатчик',
+            imgUrl: '/img/InfoCardsList/recoilModels/model2/1.jpg',
+            idCardTitle: 8,
+            idItem: 2
+        },
+        {
+            name: 'Приемник, модель 3',
+            price: 10000,
+            content: 'Крутой отдатчик',
+            imgUrl: '/img/InfoCardsList/recoilModels/model3/1.jpg',
+            idCardTitle: 8,
+            idItem: 3
+        },
+        {
             name: 'Тяга, модель 1',
             price: 10000,
             content: 'Крутая тяга',
@@ -110,22 +135,25 @@ function InfoCardsListConstructor(props) {
         <div className={` d-flex ${styles.wrapper}`}>
             <div>
                 <div className={styles.wrapperListCardDrawer}>
-                    <div className={styles.header}>Разновидности элемента 'Наименование элемента'</div>
+                    <div className={styles.header}>{props.elemClick === 0 ? null : 'Разновидности элемента:'}</div>
                     <div className={`d-flex flex-column flex-wrap ${styles.gap12px}`}>
                         {arrayHeaderModels.filter((obj) => obj.idCardTitle == props.elemClick).map((obj) => (
                             <InfoCardConstructor
-                                key = {obj.id}
+                                key={obj.id}
                                 name={obj.name}
                                 price={obj.price}
                                 content={obj.content}
-                                imgUrl={obj.imgUrl}/>
+                                imgUrl={obj.imgUrl}
+                                onClick={() => setIdCardInfo(obj.idItem)}
+                            />
                         ))}
                     </div>
                 </div>
             </div>
             <div>
-                <OptionsListConstructor idCardTitle = {props.elemClick}
-                                        changeCardStatusById = {props.changeCardColor}
+                <OptionsListConstructor idCardTitle={props.elemClick}
+                                        idCardInfo={idCardInfo}
+                                        changeCardStatusById={props.changeCardColor}
                 />
             </div>
         </div>
