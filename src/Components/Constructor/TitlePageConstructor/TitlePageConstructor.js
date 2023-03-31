@@ -52,7 +52,7 @@ function TitlePageConstructor(props) {
         {
             name: 'Приемник 2',
             imgUrl: '/img/CardTitle/recoil.jpg',
-            id: 7,
+            id: 8,
             isActive: false
         }
     ];
