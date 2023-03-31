@@ -69,7 +69,8 @@ function OptionsListConstructor(props) {
                     ))}
                 </div>
                 <div className={`cu-p ${styles.buttonAddInDrawer}`}>
-                    <img onClick={() => props.changeCardStatusById(props.idCardTitle)} width={311} height={48} src="/img/OptionsListConstructor/btn-addInDrawer.svg"
+                    <img onClick={() => props.changeCardStatusById(props.idCardTitle)} width={311} height={48}
+                         src="/img/OptionsListConstructor/btn-addInDrawer.svg"
                          alt="Добавить в корзину"/>
                 </div>
             </div>

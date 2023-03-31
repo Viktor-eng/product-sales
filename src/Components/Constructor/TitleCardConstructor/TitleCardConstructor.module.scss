@@ -22,6 +22,7 @@
   .imgActive{
     filter: grayscale(0);
     cursor: pointer;
+    transition: all 0.8s ease 0s;
   }
 
   .header {
